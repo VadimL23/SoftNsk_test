@@ -1,0 +1,105 @@
+   .head {
+       width: 100%;
+       height: 100px;
+       opacity: 90%;
+       background: $color-header;
+       display: block;
+       position: fixed;
+       z-index: 1000;
+       top: 0;
+   }
+
+   .head__wrapper {
+       @include flex;
+       height: 100px;
+       position: relative;
+   }
+
+   .nav {
+       @include flex;
+       @include text;
+       flex: 0 0 auto;
+       list-style-type: none;
+       padding-left: 0;
+
+
+       @include hands {
+           display: none;
+       }
+
+       &__item {
+           position: relative;
+           font-size: .93rem;
+           font-weight: normal;
+           padding-top: 8px;
+           margin-right: 45px;
+           text-shadow: 0 0 3px black;
+
+           &:last-child {
+               margin-right: 0;
+           }
+
+           &::before {
+               position: absolute;
+               content: "";
+               width: 100%;
+               height: .2rem;
+               background: $color-highlight;
+               z-index: 1;
+               bottom: -.1rem;
+               left: 0;
+               opacity: 0;
+               transition: opacity .2s linear;
+           }
+
+           &:hover:before {
+               display: block;
+               opacity: 100%;
+           }
+
+       }
+
+       &__link {
+           position: relative;
+
+
+
+           &::after {
+               display: block;
+               @include psevdo;
+               top: 0;
+               left: 0;
+               height: .5rem;
+               width: 100%;
+               backface-visibility: $color-highlight;
+
+           }
+
+           &--selected {
+               color: $color-highlight;
+           }
+       }
+   }
+
+
+
+
+   .logo {
+       display: block;
+       width: 50%;
+
+   }
+
+   .logo__span {
+       @include text;
+       font-size: 2rem;
+       font-family: $font-second;
+       font-weight: bold;
+
+       &--prefix {
+           color: $color-highlight;
+           padding: 0;
+           margin: 0;
+       }
+
+   }

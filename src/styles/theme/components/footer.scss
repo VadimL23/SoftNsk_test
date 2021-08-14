@@ -1,0 +1,99 @@
+.footer {
+    background: $color-footer;
+    height: 80px;
+    width: 100%;
+
+    @include lap {
+        & {
+            height: auto;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+
+        @include lap {
+            & {
+                height: auto;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+
+    &__item {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: space-around;
+        align-items: center;
+        color: $color-text;
+        height: 80px;
+
+        @include lap {
+            & {
+                height: 40px;
+            }
+        }
+
+    }
+
+    &__spliter {
+        display: block;
+
+        @include lap {
+
+            & {
+                display: none;
+            }
+        }
+    }
+
+    &__img--yandex {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../../public/img/yandex_footer.svg");
+        background-size: cover;
+        margin-right: 15px;
+    }
+
+    &__img {
+        padding-right: 15px;
+    }
+
+    &__img--yandex:before {
+        position: absolute;
+        bottom: 0%;
+        left: 40%;
+        display: block;
+        z-index: 1000;
+        content: url("../../../../public/img/point_footer.svg");
+
+
+    }
+
+    &__img--yandex:after {
+        position: absolute;
+        left: 23%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        content: url("../../../../public/img/yandex_vector.svg");
+
+
+    }
+
+    &__span-title {
+
+        @include phone {
+            & {
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="container">
+                <div class="head__wrapper">
+                    <a class="logo">
+                        <span class="logo__span">
+                            Loremipsum.<B class="logo__span--prefix">net</B>
+                        </span>
+                    </a>
+                    <button class="nav--toggle" type="button" id="nav--toggle">
+                        <span class="nav--toggle_item">Menu</span>
+                    </button>
+                    <div class="nav">
+                        <ul class="nav">
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--selected">бизнес</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">о нас</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">цены</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">оформить заказ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="container">
+            <div class="intro__title-box">
+                <div class="intro__title-box-item">
+                    <span class="intro__title intro__title--highlight">Lorem ipsum </span>
+                    <span class="intro__title">dolor sit <br> ametconsectetur </span>
+                    <span class="intro__title intro__title--highlight"> adipiscing</span>
+                </div>
+            </div>
+            <div class="intro__subtitle-box">
+                <div class="intro__subtitle-span">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
+                <ul class="intro__subtitle-ul">
+                    <li class="intro__subtitle-li">Totam rem aperiam eaque ipsa</li>
+                    <li class="intro__subtitle-li">Sit voluptatem accusantium doloremque laudantium</li>
+                    <li class="intro__subtitle-li">Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+            </div>
+            <div class="intro_btn-box">
+                <button type="button" class="btn btn--selected">заказать</button>
+                <button type="button" class="btn">подробнее</button>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <div class="container">
+            <div class="order-title">
+                <span class="order-title__span">оформление </span><span class="order-title__span order-title__span--highlight">заказа</span>
+            </div>
+            <div class="order-subtitle">
+                <span class="order-subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span>
+            </div>
+            <div class="ellips-box">
+                <ul class="ellips__container">
+                    <li class="ellips__item">
+                        <img src="../public/img/q.svg" alt="question" class="ellips__item--img"><span class="ellips__item-span">Lorem ipsum dolor sit amet</span>
+                        <div class="ellips__point-box">
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                        </div>
+                    </li>
+                    <li class="ellips__item"> <img src="../public/img/procent.svg" alt="question" class="ellips__item--img"> <span class="ellips__item-span">Сonsecteturadipiscing elit</span>
+                        <div class="ellips__point-box">
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                        </div>
+                    </li>
+                    <li class="ellips__item"><img src="../public/img/subtract.svg" alt="question" class="ellips__item--img"><span class="ellips__item-span">Sed do eiusmod tempor</span>
+                        <div class="ellips__point-box">
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                        </div>
+                    </li>
+                    <li class="ellips__item"><img src="../public/img/mail.svg" alt="question" class="ellips__item--img"><span class="ellips__item-span">Esse cillum dolore eu fugiat</span>
+                        <div class="ellips__point-box">
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                            <span class="ellips__point"></span>
+                        </div>
+                    </li>
+                    <li class="ellips__item"><img src="../public/img/cash.svg" alt="question" class="ellips__item--img"><span class="ellips__item-span">Excepteur sint occaecat cupidatat non proident</span></li>
+                </ul>
+            </div>
+            <form action="" class="form" action="#" name="form__order" id="form__order">
+                <div class="form__row">
+                    <select class="form__input form__select" name="form__order-select" id="form__order-select">
+                        <option class="form__option" disabled hidden selected>Выберите тип системы</option>
+                        <option class="form__option">Apples</option>
+                        <option class="form__option">Bananas</option>
+                    </select>
+                    <input type="text" class="form__input" placeholder="Ваш e-mail" name="email" id="email" />
+                    <input type="text" class="form__input" placeholder="Ваше имя" name="name" id="name"/>
+                </div>
+                <div class="form__row">
+                    <div class="form__row-item">
+                        <div class="form__row-item-box">
+                            <span class="form__row-span">Sed ut perspiciatis, unde omnis iste natus</span>
+                            <span class="form__row-span" id="form__range-counter">75%</span>
+                        </div>
+                        <input class="form__range" id="form__range" name="form__range" type="range" min="0" max="100" step="5" value="75" />
+                    </div>
+                    <button type="button" name="form__btn-file"  id="form__btn-file" class="form__button" placeholder="Прикрепить файл" id="input-file">
+                        <img src="../public/img/file.svg" alt="question" class="form__button-img">прикрепить файл</button>
+                </div>
+                <div class="form__row">
+
+                    <button type="submit" id="form__order-submit" name="form__order-submit" class="form__button form__button--submit">отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <div class="footer__span-title">© 2018 «LoremIpsum.net» Все права защищены.</div>
+                    <div class="footer__spliter">|</div>
+                </div>
+                <div class="footer__item">
+                    <img src="../public/img/kiwi_footer.svg" class="footer__img" alt="wiki"/>
+                    <div class="footer__span-title">Qiwi wallet</div>
+                </div>
+                <div class="footer__item ">
+                    <div class="footer__img footer__img--yandex ">
+                    </div>
+                    <div class="footer__span-title">Yandex Money</div>
+                </div>
+                <div class="footer__item">
+                    <img src="../public/img/wm_footer.svg" class="footer__img" alt="wm"/>
+                    <div class="footer__span-title">Web Money</div>
+                    <div class="footer__spliter">|</div>
+                </div>
+                <div class="footer__item">
+                    <img src="../public/img/mail_footer.svg" class="footer__img" alt="mail_img"/>
+                    <div class="footer__span-title">info@ipsum228.com</div>
+                </div>
+                <div class="footer__item">
+                    <img src="../public/img/B_footer.svg" class="footer__img" alt="B"/>
+                    <div class="footer__span-title">Мы вконтакте</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script src="./js/main.js"> </script>
+</body></html>
